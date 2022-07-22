@@ -1,7 +1,7 @@
 {
     "name": "elixir-zigler",
     "displayName": "elixir-zigler",
-    "description": "Highlight ~Z\"\" as Zig in Elixir",
+    "description": "Highlight ~Z as Zig in Elixir",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.69.0"
@@ -10,16 +10,13 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "elixir-zigler",
-            "aliases": ["Elixir Zigler", "elixir-zigler"],
-            "extensions": [".ex"],
-            "configuration": "./language-configuration.json"
-        }],
         "grammars": [{
-            "language": "elixir-zigler",
-            "scopeName": "source.elixir",
-            "path": "./syntaxes/elixir-zigler.tmLanguage.json"
+            "scopeName": "source.elixir.zigler",
+            "path": "./syntaxes/elixir-zigler.injection.json",
+            "injectTo": ["source.elixir"],
+            "embeddedLanguages": {
+                "meta.embedded.block.zig": "zig"
+            }
         }]
     }
 }

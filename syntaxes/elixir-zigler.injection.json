@@ -1,0 +1,62 @@
+{
+    "scopeName": "source.elixir.zigler",
+    "injectionSelector": "source.elixir",
+    "patterns": [
+        {
+            "begin": "\\s?(~Z\"\"\")$",
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.begin.elixir"
+                },
+                "1": {
+                    "name": "string.quoted.double.heredoc.elixir"
+                }
+            },
+            "end": "^\\s*(\"\"\")$",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.end.elixir"
+                },
+                "1": {
+                    "name": "string.quoted.double.heredoc.elixir"
+                }
+            },
+            "name": "meta.embedded.block.zig",
+            "patterns": [
+                {
+                    "include": "source.zig"
+                }
+            ]
+        },
+        {
+            "begin": "\\s?(~z\"\"\")$",
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.begin.elixir"
+                },
+                "1": {
+                    "name": "string.quoted.double.heredoc.elixir"
+                }
+            },
+            "end": "^\\s*(\"\"\")$",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.end.elixir"
+                },
+                "1": {
+                    "name": "string.quoted.double.heredoc.elixir"
+                }
+            },
+            "name": "meta.embedded.block.zig",
+            "patterns": [
+                {
+                    "include": "source.elixir#interpolated_elixir"
+                },
+                {
+                    "include": "source.zig"
+                }
+            ]
+        }
+    ],
+    "repository": {}
+}
