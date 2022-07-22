@@ -2,7 +2,10 @@
     "name": "elixir-zigler",
     "displayName": "elixir-zigler",
     "description": "Highlight ~Z as Zig in Elixir",
-    "version": "0.0.1",
+    "version": "0.1.0",
+    "repository": {
+        "url": "https://github.com/Kabie/vscode-elixir-zigler"
+    },
     "engines": {
         "vscode": "^1.69.0"
     },
