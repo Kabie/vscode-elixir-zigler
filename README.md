@@ -1,14 +1,8 @@
 # elixir-zigler README
 
-Highlight `~Z` as Zig in Elixir code.
-
 ## Features
 
-## Requirements
-
-## Extension Settings
-
-## Known Issues
+Highlight `~Z` as Zig in Elixir code.
 
 ## Release Notes
 
